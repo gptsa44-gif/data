@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Laporan Ore Getting</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  margin: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #000;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+td {
+  padding: 6px;
+  vertical-align: top;
+}
+.label {
+  width: 30%;
+}
+input {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+}
+.section {
+  margin-top: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+@media print {
+  button { display: none; }
+  input { border: none; }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>LAPORAN ORE GETTING / PRODUKSI</h1>
+<h2>PIT A1C / A1M / A1S</h2>
+
+<table>
+<tr><td class="label">Hari / Tanggal :</td><td><input></td></tr>
+<tr><td class="label">Shift :</td><td><input></td></tr>
+</table>
+
+<div class="section">A1C – Direct Getting Saprolite</div>
+<table>
+<tr><td class="label">Dumping =</td><td><input></td></tr>
+<tr><td class="label">Acuan =</td><td><input></td></tr>
+<tr><td class="label">Elevasi =</td><td><input></td></tr>
+<tr><td class="label">TB =</td><td><input></td></tr>
+<tr><td class="label">Status =</td><td><input></td></tr>
+<tr><td class="label">Gantungan =</td><td><input></td></tr>
+<tr><td class="label">Retase =</td><td><input></td></tr>
+<tr><td class="label">Total =</td><td><input></td></tr>
+</table>
+
+<div class="section">Sampling A1S</div>
+<table>
+<tr><td class="label">CEK =</td><td><input></td></tr>
+<tr><td class="label">PSI =</td><td><input></td></tr>
+<tr><td class="label">TP =</td><td><input></td></tr>
+<tr><td class="label">HS =</td><td><input></td></tr>
+<tr><td class="label">CH =</td><td><input></td></tr>
+<tr><td class="label">TRC =</td><td><input></td></tr>
+<tr><td class="label">MO =</td><td><input></td></tr>
+<tr><td class="label">RS =</td><td><input></td></tr>
+</table>
+
+<div class="section">TOTAL GETTINGAN</div>
+<table>
+<tr><td class="label">Limonit =</td><td><input></td></tr>
+<tr><td class="label">Saprolit =</td><td><input></td></tr>
+</table>
+
+<div class="section">Catatan</div>
+<input style="width:100%;">
+
+<button onclick="window.print()">CETAK / SIMPAN</button>
+</div>
+</body>
+</html>
